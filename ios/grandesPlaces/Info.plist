@@ -38,7 +38,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Allow $(PRODUCT_NAME) to use your location</string>
 	<key>UILaunchStoryboardName</key>
 	<string>SplashScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -55,5 +55,40 @@
 	<false/>
   <key>UIStatusBarStyle</key>
   <string>UIStatusBarStyleDefault</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Give $(PRODUCT_NAME) permission to save photos</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow $(PRODUCT_NAME) to use the camera</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allow $(PRODUCT_NAME) to use the camera</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Allow $(PRODUCT_NAME) to use your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow $(PRODUCT_NAME) to use your location</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+			<key>NSExceptionDomains</key>
+			<dict>
+					<key>com</key>
+					<dict>
+							<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+							<true/>
+					</dict>
+					<key>net</key>
+					<dict>
+							<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+							<true/>
+					</dict>
+					<key>org</key>
+					<dict>
+							<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+							<true/>
+					</dict>
+
+			</dict>
+			<key>NSAllowsLocalNetworking</key>
+			<true/>
+	</dict>
+
 </dict>
 </plist>
